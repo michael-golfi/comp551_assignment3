@@ -1,16 +1,21 @@
-# Project Code for Team Highly Classified
+# Highly Classified Project Code
 
 ## Preparing the code
 
-First, we need to take the given data files (trainX.npy, trainY.npy, testX.npy) and put them in the base of the project. Then run:
-
 ```bash
+wget https://inclass.kaggle.com/c/comp-551-tiny-imagenet/download/tinyX.npy
+wget https://inclass.kaggle.com/c/comp-551-tiny-imagenet/download/tinyX_test.npy
+wget https://inclass.kaggle.com/c/comp-551-tiny-imagenet/download/tinyY.npy
 python ./preprocess.py
 ```
 
 ## Part One
 
+python logistic_regression.py
+
 ## Part Two
+
+python part2.py
 
 ## Part Three
 

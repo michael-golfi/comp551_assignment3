@@ -8,6 +8,7 @@ import random, string
 
 def randomword(length):
    return ''.join(random.choice(string.lowercase) for i in range(length))
+   
 OUTPUT_DIR = "data/label"
 trainX = numpy.load('tinyX.npy') # this should have shape (26344, 3, 64, 64)
 trainY = numpy.load('tinyY.npy') 
@@ -25,4 +26,4 @@ for i in range(len(trainX)):
         os.makedirs(new_path)
 
     im = Image.fromarray(trainX[i].transpose(2,1,0))
-    im.save(OUTPUT_DIR + label + "/" + randomword(32) + ".jpeg")
+    im.save(OUTPUT_DIR + label + "/%d.jpeg" % i)
