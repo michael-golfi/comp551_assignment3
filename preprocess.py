@@ -22,6 +22,7 @@ labels = ["%d" % label for label in trainY]
 for i in range(len(trainX)):
     label = labels[i]
     new_path = OUTPUT_DIR + label
+    
     if not os.path.isdir(new_path):
         os.makedirs(new_path)
 

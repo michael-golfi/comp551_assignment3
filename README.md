@@ -1,6 +1,6 @@
 # Highly Classified Project Code
 
-## Preparing the code
+## Preparing the data
 
 ```bash
 wget https://inclass.kaggle.com/c/comp-551-tiny-imagenet/download/tinyX.npy
